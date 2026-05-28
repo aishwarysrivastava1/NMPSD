@@ -1,0 +1,28 @@
+# --- PyTorch & Audio ---
+# Ensure you install the cuda-specific version via https://pytorch.org/get-started/locally/
+torch>=2.1.0
+torchaudio>=2.1.0
+numpy>=1.26.0
+
+# --- Transformers & Model Stack ---
+transformers>=4.35.0
+peft>=0.7.0
+accelerate>=0.25.0
+safetensors>=0.4.0
+
+# --- Data Processing & Ingestion ---
+pandas>=2.1.0
+scikit-learn>=1.3.0
+scipy>=1.11.0
+jiwer>=3.0.0
+tqdm>=4.66.0
+
+# --- Pipeline Dependencies ---
+# Silero VAD requires torch as a dependency
+# Whisper requires these for automatic transcription
+openai-whisper>=20231117
+moviepy>=1.0.3
+
+# --- Optimization & Memory Management ---
+# For efficient weight tracking and metric analysis
+matplotlib>=3.8.0
